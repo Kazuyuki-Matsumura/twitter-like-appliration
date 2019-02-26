@@ -1,0 +1,6 @@
+<!-- データベースから投稿記録を持ってきて全て表示させる -->
+<% @posts.each do |post| %>
+  <div class="posts-index-item">
+    <%= post.content %>
+  </div>
+<% end %>

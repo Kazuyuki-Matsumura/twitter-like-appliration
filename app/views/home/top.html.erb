@@ -1,16 +1,10 @@
-<% データベースから投稿記録を持ってきて全て表示させる %>
-<% @posts.each do |post| %>
-  <div class="posts-index-item">
-    <%= post.content %>
-  </div>
-<% end %>
-
-<% 投稿を入力するフォーム %>
-<%= form_tag()"top/create") do %>
-  <textarea></textarea>
+<!-- 投稿を入力するフォーム -->
+<%= form_tag("/top/create") do %>
+  <textarea name="content"></textarea>
   <input type="submit" value="投稿">
 <% end %>
 
+<!-- コメントアウト -->
 <% if false %>
 コメントアウト
 <% end %>
