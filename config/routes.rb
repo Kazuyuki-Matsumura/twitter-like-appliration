@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   get "top" => "home#top"
 
   get "posts/index" => "posts#index"

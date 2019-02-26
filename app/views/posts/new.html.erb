@@ -1,4 +1,4 @@
-<%= form_tag("/posts/create") do %>
-  <textarea name="content"></textarea>
-  <input type="submit" value="投稿">
+<%= form_for(@post, url: {controller: :posts, action: :create}) do |f| %>
+  <%= f.text_area :content %>
+  <%= f.submit %>
 <% end %>
