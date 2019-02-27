@@ -2,5 +2,6 @@
 <% @posts.each do |post| %>
   <div class="posts-index-item">
     <%= post.content %>
+    <%= link_to("返信する",reply_post_path(post.id))  %>
   </div>
 <% end %>
