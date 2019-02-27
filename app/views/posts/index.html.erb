@@ -1,7 +1,7 @@
-<!-- データベースから投稿記録を持ってきて全て表示させる -->
+<!-- データベースから投稿記録と投稿者を持ってきて全て表示させる -->
 <% @posts.each do |post| %>
   <div class="posts-index-item">
-    <%= post.content %>
+    <p> 投稿 : <%= post.content %> 投稿者 : <%= post.name %> </p>
     <%= link_to("返信する",reply_post_path(post.id))  %>
   </div>
 <% end %>
