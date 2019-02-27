@@ -1,5 +1,5 @@
-<%= form_tag(posts_path) do %>
-  <textarea name="content"></textarea>
-  <textarea name="name"></textarea>
-  <input type="submit" value="投稿">
+<%= form_with url: posts_path do |form| %>
+  <%= form.text_field :content %>
+  <%= form.text_field :name %>
+  <%= form.submit '投稿'%>
 <% end %>
