@@ -2,6 +2,6 @@
 <% @posts.each do |post| %>
   <div class="posts-index-item">
     <p> 投稿 : <%= post.content %> 投稿者 : <%= post.name %> </p>
-    <%= link_to("返信する",reply_post_path(post.id))  %>
+    <%= link_to("返信",reply_post_path(post.id))  %>
   </div>
 <% end %>
