@@ -1,3 +1,28 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+header {
+  height: 64px;
+  width: 100%;
+
+  background-color: #418B89;
+  a:link {color:white; text-decoration:none }
+  a:visited { color:white; text-decoration:none }
+  a:hover { color:white; text-decoration:none }
+  a:active { color:white; text-decoration:none }
+
+}
+
+.header-list li{
+  list-style: none;
+  float: left;
+
+  margin: 20px 10px;
+}
+
+.main li{
+  height: 30px;
+  list-style: none;
+  float: left;
+}
+
+.posts-index-item{
+  width: 100%;
+}
