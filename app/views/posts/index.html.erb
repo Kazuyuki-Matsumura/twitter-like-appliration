@@ -1,7 +1,19 @@
 <!-- データベースから投稿記録と投稿者を持ってきて全て表示させる -->
-<% @posts.each do |post| %>
-  <div class="posts-index-item">
-    <p> 投稿 : <%= post.content %> 投稿者 : <%= post.name %> </p>
-    <%= link_to("返信する",reply_post_path(post.id))  %>
+<header>
+  <div class="header-list">
+    <ul>
+      <li> <%= link_to("ホーム",root_path) %> </li>
+      <li> <%= link_to("投稿",new_post_path) %> </li>
+    </ul>
   </div>
-<% end %>
+</header>
+
+<div class="main">
+  <% @posts.each do |post| %>
+    <div class="posts-index-item">
+      <li> 投稿 : <%= post.content %> </li>
+      <li> 投稿者 : <%= post.name %> </li>
+      <li> <%= link_to("返信する",reply_post_path(post.id)) %> </li>
+    </div>
+  <% end %>
+</div>
