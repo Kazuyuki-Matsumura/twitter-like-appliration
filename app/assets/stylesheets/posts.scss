@@ -1,3 +1,4 @@
+//ヘッダー
 header {
   height: 64px;
   width: 100%;
@@ -17,13 +18,42 @@ header {
   margin: 20px 10px;
 }
 
+//メイン
+.main{
+  background-color: #F0EFF0;
+}
+
 .main li{
   height: 30px;
   list-style: none;
-  float: left;
+}
+
+//投稿表示
+.posts-index{
+  display: block;
+  padding-top: 10px;
 }
 
 .posts-index-item{
-  display: inline-flex;
-  width: 100%;
+  display: inline-block;
+  width: 95%;
+
+  margin-left: 20px;
+  margin-bottom: 5px;
+
+  background-color: #c3e6e4;
+}
+
+.posts-name{
+  margin-left: 30px;
+}
+
+.posts-content{
+}
+
+.posts-reply{
+  a:link {color:black; text-decoration:none }
+  a:visited { color:black; text-decoration:none }
+  a:hover { color:black; text-decoration:none }
+  a:active { color:white; text-decoration:none }
 }

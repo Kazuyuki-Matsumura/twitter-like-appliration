@@ -9,11 +9,19 @@
 </header>
 
 <div class="main">
-  <% @posts.each do |post| %>
-    <div class="posts-index-item">
-      <li> 投稿 : <%= post.content %> </li>
-      <li> 投稿者 : <%= post.name %> </li>
-      <li> <%= link_to("返信",reply_post_path(post.id)) %> </li>
-    </div>
-  <% end %>
+  <div class="posts-index">
+    <% @posts.each do |post| %>
+      <div class="posts-index-item">
+        <div class="posts-name">
+          <li> <%= post.name %> </li>
+        </div>
+        <div class="posts-content">
+          <li> <%= post.content %> </li>
+        </div>
+        <div class="posts-reply">
+          <li> <%= link_to("返信",reply_post_path(post.id)) %> </li>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>
