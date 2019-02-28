@@ -12,8 +12,13 @@
   <div class="posts-index">
     <% @posts.each do |post| %>
       <div class="posts-index-item">
-        <div class="posts-name">
-          <li> <%= post.name %> </li>
+        <div class="user">
+          <div class="posts-index-image">
+            <img src="/azarashi.png" alt="azarashi" width="15%" height="15%">
+          </div>
+          <div class="posts-name">
+            <li> <%= post.name %> </li>
+          </div>
         </div>
         <div class="posts-content">
           <li> <%= post.content %> </li>

@@ -32,27 +32,41 @@ header {
 .posts-index{
   display: block;
   padding-top: 10px;
+
+  width: 95%;
+
+  margin: 0 auto;
+
 }
 
 .posts-index-item{
-  display: inline-block;
-  width: 95%;
+  height: 200px;
 
-  margin-left: 20px;
   margin-bottom: 5px;
 
   background-color: #c3e6e4;
+
+}
+
+.user{
+  display: inline-block;
+}
+
+.posts-index-image{
+  display: inline-block;
+  float: left;
 }
 
 .posts-name{
-  margin-left: 30px;
+  display: inline-block;
+  float: left;
 }
 
 .posts-content{
 }
 
 .posts-reply{
-  a:link {color:black; text-decoration:none }
+  a:link { color:black; text-decoration:none }
   a:visited { color:black; text-decoration:none }
   a:hover { color:black; text-decoration:none }
   a:active { color:white; text-decoration:none }
