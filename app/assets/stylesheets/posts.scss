@@ -40,12 +40,12 @@ header {
 }
 
 .posts-index-item{
-  height: 200px;
+  display: block;
 
+  height: 200px;
   margin-bottom: 5px;
 
   background-color: #c3e6e4;
-
 }
 
 .user{
@@ -54,15 +54,31 @@ header {
 
 .posts-index-image{
   display: inline-block;
-  float: left;
+  width: 100px;
 }
 
 .posts-name{
   display: inline-block;
-  float: left;
+}
+
+.posts-name li{
+  font-size: 40px;
+}
+
+.posts{
 }
 
 .posts-content{
+  display: inline-block;
+  margin-left: 100px;
+}
+
+.posts-content li{
+  font-size: 40px;
+}
+
+.posts-reply{
+  margin-left: 100px;
 }
 
 .posts-reply{

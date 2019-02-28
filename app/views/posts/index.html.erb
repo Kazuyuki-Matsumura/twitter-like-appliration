@@ -14,17 +14,21 @@
       <div class="posts-index-item">
         <div class="user">
           <div class="posts-index-image">
-            <img src="/azarashi.png" alt="azarashi" width="15%" height="15%">
+            <img src="/azarashi.png" alt="azarashi" width="70px" height="70px">
           </div>
           <div class="posts-name">
             <li> <%= post.name %> </li>
           </div>
         </div>
-        <div class="posts-content">
-          <li> <%= post.content %> </li>
-        </div>
-        <div class="posts-reply">
-          <li> <%= link_to("返信",reply_post_path(post.id)) %> </li>
+        <div class="posts">
+          <div class="posts-content">
+            <li> <%= post.content %> </li>
+          </div>
+          <!--
+          <div class="posts-reply">
+            <li> <%= link_to("返信",reply_post_path(post.id)) %> </li>
+          </div>
+          -->
         </div>
       </div>
     <% end %>
