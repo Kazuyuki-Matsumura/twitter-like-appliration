@@ -1,5 +1,5 @@
 current directory: /Users/i.k.matsumura/twitter-like-application/tweet_app/vendor/bundle/ruby/2.5.0/gems/pg-1.1.4/ext
-/Users/i.k.matsumura/.rbenv/versions/2.5.0/bin/ruby -I /Users/i.k.matsumura/.rbenv/versions/2.5.0/lib/ruby/site_ruby/2.5.0 -r ./siteconf20190301-88892-va1otk.rb extconf.rb --with-pg-config\=/usr/pgsql-9.3/bin/pg_config
+/Users/i.k.matsumura/.rbenv/versions/2.5.0/bin/ruby -I /Users/i.k.matsumura/.rbenv/versions/2.5.0/lib/ruby/site_ruby/2.5.0 -r ./siteconf20190301-90108-m3feo8.rb extconf.rb --with-pg-config\=/usr/pgsql-9.3/bin/pg_config
 Using config values from /usr/pgsql-9.3/bin/pg_config
 sh: /usr/pgsql-9.3/bin/pg_config: No such file or directory
 sh: /usr/pgsql-9.3/bin/pg_config: No such file or directory
