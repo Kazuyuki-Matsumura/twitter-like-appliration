@@ -8,7 +8,6 @@ header {
   a:visited { color:white; text-decoration:none }
   a:hover { color:white; text-decoration:none }
   a:active { color:white; text-decoration:none }
-
 }
 
 .header-list li{
@@ -16,6 +15,7 @@ header {
   float: left;
 
   margin: 20px 10px;
+  font-size: 20px;
 }
 
 //メイン
@@ -49,7 +49,7 @@ header {
 }
 
 .user{
-  display: inline-block;
+  display: block;
 }
 
 .posts-index-image{
@@ -70,6 +70,7 @@ header {
 
 .posts-content{
   display: inline-block;
+  margin-top: 30px;
   margin-left: 100px;
 }
 
