@@ -1,13 +1,4 @@
 <!-- データベースから投稿記録と投稿者を持ってきて全て表示させる -->
-<header>
-  <div class="header-list">
-    <ul>
-      <li> <%= link_to("ホーム",root_path) %> </li>
-      <li> <%= link_to("投稿",new_post_path) %> </li>
-    </ul>
-  </div>
-</header>
-
 <div class="main">
   <div class="posts-index">
     <% @posts.each do |post| %>

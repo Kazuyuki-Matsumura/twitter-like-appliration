@@ -9,6 +9,15 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+  <header>
+    <div class="header-list">
+      <ul>
+        <li> <%= link_to("ホーム",root_path) %> </li>
+        <li> <%= link_to("投稿",new_post_path) %> </li>
+      </ul>
+    </div>
+  </header>
+
   <body>
     <%= yield %>
   </body>
