@@ -22,6 +22,6 @@ test:
 
 production:
   <<: *default
-  adapter: postgresql
-  encoding: unicode
-  pool: 5
+  database: matsumura-twitter-application_production
+  username: matsumura-twitter-application
+  password: <%= ENV['appname_DATABASE_PASSWORD'] %>
