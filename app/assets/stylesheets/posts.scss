@@ -1,9 +1,12 @@
 //ヘッダー
 header {
+  display: inline-block;
+
   height: 64px;
   width: 100%;
 
   background-color: #418B89;
+
   a:link {color:white; text-decoration:none }
   a:visited { color:white; text-decoration:none }
   a:hover { color:white; text-decoration:none }
@@ -14,16 +17,16 @@ header {
   list-style: none;
   float: left;
 
-  margin: 20px 10px;
+  margin-left: 20px;
   font-size: 20px;
 }
 
 //メイン
-.main{
+.posts-index-body{
   background-color: #F0EFF0;
 }
 
-.main li{
+.posts-index-body li{
   height: 30px;
   list-style: none;
 }
@@ -87,5 +90,45 @@ header {
   a:link { color:black; text-decoration:none }
   a:visited { color:black; text-decoration:none }
   a:hover { color:black; text-decoration:none }
-  a:active { color:white; text-decoration:none }
+  a:active { color:black; text-decoration:none }
+}
+
+.posts-new-body{
+  background-color: #F0EFF0;
+}
+
+.posts-new-body li{
+
+  height: 50px;
+  list-style: none;
+}
+
+.submit-name{
+  height: 30px;
+  width: 80%;
+}
+
+.submit-content{
+  height: 30px;
+  width: 80%;
+}
+
+.submit-button {
+  display       : inline-block;
+  border-radius : 100%;          /* 角丸       */
+  font-size     : 17pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 12px;   /* 余白       */
+  background    : #418b89;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  border        : 2px solid #418b89;    /* 枠の指定 */
+  float         : right;
+  margin-right  : 50px;
+}
+.submit-button:hover {
+  color         : #418b89;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
 }
