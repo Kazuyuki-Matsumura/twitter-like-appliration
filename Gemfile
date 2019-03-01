@@ -10,7 +10,7 @@ gem 'rails', '~> 5.2.2'
 #gem 'sqlite3', group: :development
 
 # 本番環境(heroku)ではPostgreSQLを使用
-gem 'pg', group;
+gem 'pg'
 
 #gem 'sqlite3'
 
